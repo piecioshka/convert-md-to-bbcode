@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "node20",
+    "types": ["node"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "./types/"
+  },
+  "include": ["src"],
+  "exclude": [
+    "bin",
+    "coverage",
+    "dist",
+    "node_modules",
+    "src/**/*.spec.ts",
+    "types"
+  ]
+}

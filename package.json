@@ -1,0 +1,77 @@
+{
+  "type": "module",
+  "name": "convert-md-to-bbcode",
+  "description": "Convert Markdown to BBCode",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl/"
+  },
+  "scripts": {
+    "clear": "rm -rf dist/ types/ coverage/",
+    "clear:all": "rm -rf node_modules/ && npm run clear",
+    "build": "tsc",
+    "prepack": "npm run clear && npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "npm run test -- --coverage",
+    "count": "find . -name '*.ts' -not -path './node_modules/*' | xargs wc -l | sort -r",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .js,.ts",
+    "prepare": "husky",
+    "pre-commit": "lint-staged"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.67.0",
+    "@typescript-eslint/parser": "^8.67.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^8.57.0",
+    "eslint-config-piecioshka": "^3.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsdoc": "^62.0.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-smells": "^1.0.1",
+    "eslint-plugin-todo-with-label": "^3.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/piecioshka/convert-md-to-bbcode.git"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "types",
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "!**/*.spec.*"
+  ],
+  "keywords": [
+    "markdown",
+    "bbcode",
+    "converter",
+    "markdown-to-bbcode",
+    "md-to-bbcode",
+    "forum",
+    "phpbb",
+    "cli"
+  ],
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "bin": {
+    "convert-md-to-bbcode": "bin/cli.js"
+  }
+}
