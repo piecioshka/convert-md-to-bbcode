@@ -1,0 +1,21 @@
+node_modules/
+npm-debug.log
+
+coverage/
+.nyc_output/
+dist/
+types/
+tmp/*
+!tmp/.gitkeep
+
+.env
+.env.*
+!.env.example
+
+!.vscode/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
