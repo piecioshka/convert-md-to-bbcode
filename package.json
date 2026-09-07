@@ -41,7 +41,7 @@
     "lint-staged": "^17.3.0",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.11"
+    "vitest": "^5.0.0"
   },
   "repository": {
     "type": "git",
