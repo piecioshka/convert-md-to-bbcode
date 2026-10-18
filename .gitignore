@@ -6,7 +6,7 @@ coverage/
 dist/
 types/
 tmp/*
-!tmp/.gitkeep
+tmp/
 
 .env
 .env.*
