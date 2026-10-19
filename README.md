@@ -108,19 +108,9 @@ convert-md-to-bbcode docs/indicator.md | xclip -selection clipboard   # Linux (X
 convert-md-to-bbcode docs/indicator.md | wl-copy                      # Linux (Wayland)
 ```
 
-## Development 🛠️
-
-```bash
-npm install
-npm test             # unit tests
-npm run coverage     # unit tests with a coverage report
-npm run lint         # ESLint
-npm run format       # Prettier over the whole repository
-```
-
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br /> Feel free to check [issues page](https://github.com/piecioshka/convert-md-to-bbcode/issues/).
+Contributions, issues and feature requests are welcome!<br /> Feel free to check [issues page](https://github.com/piecioshka/convert-md-to-bbcode/issues/).<br /> Setup, scripts, tests and project structure: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
