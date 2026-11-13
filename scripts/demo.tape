@@ -1,7 +1,7 @@
 # Demo of convert-md-to-bbcode, rendered with VHS (https://github.com/charmbracelet/vhs)
-# Regenerate with: vhs demo/demo.tape
+# Regenerate with: vhs scripts/demo.tape
 
-Output demo/demo.gif
+Output docs/demo.gif
 
 Set Shell "bash"
 Set FontSize 16

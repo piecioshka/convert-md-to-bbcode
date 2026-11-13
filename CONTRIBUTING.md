@@ -50,7 +50,7 @@ The husky pre-commit hook runs `npm test` and then lint-staged, which formats st
 - `src/cli.ts` - argument parsing, stdin and `--out` handling
 - `src/*.spec.ts` - tests, next to the code they cover
 - `bin/cli.js` - the executable, only imports `main` from `dist/cli.js` and calls it
-- `demo/demo.tape` - the [VHS](https://github.com/charmbracelet/vhs) script behind `demo/demo.gif`; regenerate with `vhs demo/demo.tape`
+- `scripts/demo.tape` - the [VHS](https://github.com/charmbracelet/vhs) script behind `docs/demo.gif`; regenerate with `vhs scripts/demo.tape`
 
 ## Design decisions
 

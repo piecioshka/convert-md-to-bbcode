@@ -25,7 +25,7 @@ A typical example is TradingView, whose script publication descriptions accept a
 
 ## Preview 🎉
 
-![convert-md-to-bbcode demo](demo/demo.gif)
+![convert-md-to-bbcode demo](docs/demo.gif)
 
 ## Where BBCode is required 📍
 
